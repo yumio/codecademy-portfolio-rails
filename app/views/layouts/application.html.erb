@@ -9,7 +9,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-
+<body>
   <div class="header"> 
   	<div class="container">
       <div class="row"> 
@@ -17,8 +17,8 @@
           <ul> 
             <li><%= link_to "Home", root_path %></li> 
             <li><%= link_to "Portfolio", portfolio_path %></li> 
-             <li><%= link_to "Blog", "http://yumio.net"  %></li>
-            <li><a href="about">About</a></li> 
+             <li><%= link_to "Blog", "http://yumio.net" %> </li>
+            <li><%= link_to "About", about_path %></li> 
             <li><a href="contact">Contact</a></li>
           </ul> 
         </div>
@@ -39,5 +39,5 @@
  <p>&copy; 2016 Yumio Saneyoshi</p>
 </div>
 </div>        
-        
+</body>
 </html>
